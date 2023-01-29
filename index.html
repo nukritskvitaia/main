@@ -11,10 +11,10 @@
 <header>
   <nav>
     <ul>
-      <li><a href="#intro">Introduction</a></li>
-      <li><a href="#algorithms">Algorithms</a></li>
-      <li><a href="#databases">Databases</a></li>
-      <li><a href="#networks">Networks</a></li>
+      <li><a href="intro.html" onclick="goToPage('intro.html')">Introduction</a></li>
+      <li><a href="algorithms.html" onclick="goToPage('algorithms.html')">Algorithms</a></li>
+      <li><a href="databases.html" onclick="goToPage('databases.html')">Databases</a></li>
+      <li><a href="networks.html" onclick="goToPage('networks.html')">Networks</a></li>
     </ul>
   </nav>
 </header>
@@ -47,16 +47,9 @@
   // JavaScript code goes here
   // Example:
   
-  var algoButton = document.getElementById("algo-button");
-  var algoContent = document.getElementById("algo-content");
-
-  algoButton.addEventListener("click", function() {
-    if (algoContent.style.display === "none") {
-      algoContent.style.display = "block";
-    } else {
-      algoContent.style.display = "none";
-    }
-  });
+  function goToPage(page) {
+    location.href = page;
+  }
 </script>
 
 </body>
