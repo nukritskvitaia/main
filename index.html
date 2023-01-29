@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Computer Science Website</title>
+  <style>
+     body { background-color: #f2f2f2; } 
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#algorithms">Algorithms</a></li>
+      <li><a href="#databases">Databases</a></li>
+      <li><a href="#networks">Networks</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="intro">
+  <h1>Welcome to My Computer Science Website</h1>
+  <p>Here you will find information on various computer science subjects.</p>
+</section>
+
+<section id="algorithms">
+  <h2>Algorithms</h2>
+  <p>An algorithm is a set of instructions that are followed in a specific order to accomplish a task.</p>
+  <button id="algo-button">Toggle Content</button>
+  <div id="algo-content">
+    <p>This is some additional content about algorithms that will be shown or hidden.</p>
+  </div>
+</section>
+
+<section id="databases">
+  <h2>Databases</h2>
+  <p>A database is a collection of data that is organized in a way that allows easy access and management.</p>
+</section>
+
+<section id="networks">
+  <h2>Networks</h2>
+  <p>A network is a group of devices that are connected together to share resources and information.</p>
+</section>
+
+<script>
+  // JavaScript code goes here
+  // Example:
+  
+  var algoButton = document.getElementById("algo-button");
+  var algoContent = document.getElementById("algo-content");
+
+  algoButton.addEventListener("click", function() {
+    if (algoContent.style.display === "none") {
+      algoContent.style.display = "block";
+    } else {
+      algoContent.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
